@@ -1,0 +1,81 @@
+.login {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../images/bgc.jpg');
+    display: flex;
+    .login-container {
+        padding: 60px;
+        margin: auto;
+        width: 100%;
+        max-width: 520px;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #605454;
+        opacity: 0.8;
+        box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+        label {
+            color: white;
+            margin: 14px 0;
+            display: block;
+            font-size: 22px;
+            line-height: 1;
+          }
+          input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 19px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            letter-spacing: 1px;
+          }
+          .btn-container {
+            width: 100%;
+            padding: 24px 0;
+            .login-btn {
+                border: none;
+                outline: none;
+                width: 100%;
+                padding: 15px 0;
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 1px;
+                background: #0e0a16;
+                cursor: pointer;
+              }
+            p {
+                margin: 14px 0 0 0;
+                text-align: right;
+                color: #fff;
+                span {
+                    color: yellow;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    margin-left: 5px;
+                    cursor: pointer;
+                    transition: all 400ms ease-in-out;
+                  }
+                  span:hover{
+                    color: red;
+                }
+              }
+          }
+          .error-msg {
+            color: red;
+            font-size: 16px;
+          }
+      }
+  }
+h1{
+    font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300)));;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.logo{
+  font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300)));;
+}
+
+  
