@@ -14,20 +14,20 @@
     color: #fff;
     font-size: 24px;
   }
-  
+
   .recipe-textarea::placeholder {
     color: white;
   }
-  
+
   .recipe-button {
    @include btn;
    padding: 17px;
   }
-  
+
   .recipe-textarea.edit {
     border: 2px solid white;
   }
-  
+
   .recipe-button.edit {
     background: linear-gradient(
       90deg,
@@ -49,7 +49,7 @@
     border-radius: 5px;
     min-width: 50%;
     max-width: 90%;
-    
+
   }
   .icons {
     display: flex;
@@ -57,12 +57,12 @@
     font-size: 24px;
     cursor: pointer;
   }
-  
+
   .delete-icon {
     margin-right: 5px;
     color: #fff;
   }
-  
+
   .edit-icon {
     color: #fff;
   }

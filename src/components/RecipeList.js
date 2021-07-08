@@ -1,19 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import RecipeForm from './RecipeForm';
 import Recipe from './Recipe';
+// import firebase from 'firebase';
 
 function RecipeList() {
-  const [recipes, setRecipes] = useState([]);
+  //FIREBASE TO ADD
 
+  // const textareaStorage = firebase.firestore().collection("recipeCollection");
+
+  // const saveData =
+  // textareaStorage.onSnapshot((querySnapshot) =>{
+  //   const items = [];
+  //   querySnapshot.forEach((doc)=>{
+  //     items.push(doc.data())
+  //   })
+  //   setRecipes(items);
+
+  // })
+  // useEffect(() => {
+  //   saveData();
+  // }, [])
+
+  const [recipes, setRecipes] = useState([]);
   const addRecipe = recipe => {
     if (!recipe.text || /^\s*$/.test(recipe.text)) {
       return;
     }
-
+    
     const newRecipes = [recipe, ...recipes];
-
     setRecipes(newRecipes);
-    console.log(...recipes);
   };
 
   const updateRecipe = (recipeId, newValue) => {
